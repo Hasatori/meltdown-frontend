@@ -12,7 +12,7 @@ body {
   --color-info: #33b5e5;
   --color-warning: #ffbb33;
   &.dark {
-    --color-primary:#2EAD69;
+    --color-primary:#E9AD72;
     --color-background:#112334;
     --color-text-primary:#F2F2F2;
     --color-text-main:#BBD3D5;
@@ -27,7 +27,6 @@ body {
   color: var(--color-text-main) !important;
 
 }
-
 .Toastify__toast--error{
   background-color: var(--color-error) !important;
 }

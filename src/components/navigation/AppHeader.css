@@ -14,7 +14,7 @@ body {
   color: var(--color-text-main) !important;
 }
 body.dark {
-  --color-primary:#2EAD69;
+  --color-primary:#E9AD72;
   --color-background:#112334;
   --color-text-primary:#F2F2F2;
   --color-text-main:#BBD3D5;
@@ -166,6 +166,19 @@ a:hover, .link:hover {
 
 .active {
   font-weight: bold;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+@font-face {
+  font-family: "squealer";
+  src: url(./../../assets/fonts/squealer.ttf);
+}
+.band-name {
+  font-family: squealer;
 }
 
 .toggler-icon {

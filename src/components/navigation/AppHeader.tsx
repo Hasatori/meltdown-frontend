@@ -27,7 +27,7 @@ import {Theme} from "../../redux/reducer/GeneralReducer";
 import {dismisSetTheme} from "../../redux/actiontype/GeneralActionTypes";
 import {Routes} from "../../util/Constants";
 import {useMediaQuery} from "@react-hook/media-query";
-
+import logo from '../../assets/images/common/logo.png'
 
 function mapDispatchToProps(dispatch: ThunkDispatch<any, any, AnyAction>) {
     return {
@@ -50,10 +50,11 @@ function AppHeader(props: AppProps) {
             <MDBNavbar className="navbar" fixed="top" style={bgPink} expand="lg">
                 <MDBContainer>
                     <MDBNavbarBrand href={Routes.ABOUT1}>
-                        Full-stack template
+ <div className='band-name h1-responsive'>Meltdown</div>
                     </MDBNavbarBrand>
                     <div className="d-flex flex-row">
-                        <div className="mr-3">
+
+                        {/*<div className="mr-3">
                             {collapsed ? <DarkModeToggle
                                 onChange={() => {
                                     setIsDark(!isDark);
@@ -62,7 +63,7 @@ function AppHeader(props: AppProps) {
                                 checked={isDark}
                                 size={50}
                             /> : <></>}
-                        </div>
+                        </div>*/}
                         <MDBNavbarToggler
                             className={open ? 'toggler-icon open' : 'toggler-icon'}
 
@@ -109,7 +110,7 @@ function AppHeader(props: AppProps) {
                                 </MDBNavItem>
                             ) : (
                                 <>
-                                    <MDBNavItem active={location.pathname === Routes.LOGIN} className='my-auto'>
+                                   {/* <MDBNavItem active={location.pathname === Routes.LOGIN} className='my-auto'>
                                         <MDBNavLink to={Routes.LOGIN} link>
                                             <div onClick={() => {
                                                 setOpen(false)
@@ -124,9 +125,9 @@ function AppHeader(props: AppProps) {
                                             }}>{t('ns1:signupHeading')}</div>
                                         </MDBNavLink>
                                     </MDBNavItem>
-                                </>
+                                */}</>
                             )}
-                            <MDBNavItem>
+                        {/*    <MDBNavItem>
                                 <MDBDropdown>
                                     <MDBDropdownToggle caret color='transparent'
                                                        className='z-depth-0 mx-2 p-0  border-0'>
@@ -164,8 +165,8 @@ function AppHeader(props: AppProps) {
                                             })}
                                     </MDBDropdownMenu>
                                 </MDBDropdown>
-                            </MDBNavItem>
-                            {!collapsed ? <MDBNavItem className="my-auto">
+                            </MDBNavItem>*/}
+                        {/*    {!collapsed ? <MDBNavItem className="my-auto">
                                 <DarkModeToggle
                                     onChange={() => {
                                         setIsDark(!isDark);
@@ -174,7 +175,7 @@ function AppHeader(props: AppProps) {
                                     checked={isDark}
                                     size={50}
                                 />
-                            </MDBNavItem> : <></>}
+                            </MDBNavItem> : <></>}*/}
 
                         </MDBNavbarNav>
                     </MDBCollapse>

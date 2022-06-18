@@ -1,8 +1,8 @@
 import React from 'react';
 import './About.css'
-import {MDBTypography} from "mdbreact";
+import {MDBCol, MDBRow, MDBTypography} from "mdbreact";
 import {Link} from 'react-router-dom';
-import stack from '../../assets/images/common/react_plus_spring_boot.png'
+import logo from '../../assets/images/common/logo.png'
 import {AppProps} from "../../index";
 import {connect} from "react-redux";
 import {Routes} from "../../util/Constants";
@@ -11,17 +11,28 @@ import {Trans, useTranslation} from "react-i18next";
 function About(appProps: AppProps) {
     const {t, i18n} = useTranslation();
     return (
-        <section className='d-flex flex-column justify-content-center'>
-            <section id='what-is-fullstack-template'>
-                <h1 className="h1-responsive bold color-primary mb-5 text-center">   {t('ns1:whatIsFullStackTemplateHeading')}</h1>
-                <MDBTypography className='text-long lead text-center'>
-                    {t('ns1:whatIsFullStackTemplateParagraph')}
-                </MDBTypography>
-                <img src={stack} width='80%' className='center-image' loading={"lazy"}/>
+        <section className='d-flex flex-column justify-content-center '>
+            <section>
+                <h2 className="h2-responsive color-primary bold mb-4">Historie</h2>
+                <MDBRow className='flex-row'>
+                    <MDBCol size='6'><p className='text-long'>Meltdown je světově známá <b>punk-rock-jazz-tůl-pop-mentalová</b> kapela. Její vznik se datuje k 6.6.666, kdy
+                    během krvavého rituálu
+                    </p></MDBCol>
+                    <MDBCol size='4'>
+                        <img src={logo} width='80%' className='center-image' loading={"lazy"}/></MDBCol>
+
+                </MDBRow>
+            </section>
+            <div className="divider"/>
+            <section>
+                <h2 className="h2-responsive color-primary bold mb-4">Styl</h2>
+                <p className="text-long">
+                    Kapela se vyznačuje děláním špatných coverů dobrých písní. Zaměřuje se zejména na mršení písní od Tool (nebo jak jej kapela sama pracovně nazývá "Tůl", popřípadě "Stůl").
+                </p>
             </section>
             <div className="divider"/>
             <section id="supported-functionalities">
-                <h2 className="h2-responsive color-primary bold mb-4">{t('ns1:supportedFunctionalitiesHeading')}</h2>
+                <h2 className="h2-responsive color-primary bold mb-4">Členové</h2>
                 <p className="text-long">
                     <Trans
                         i18nKey="ns1:supportedFunctionalitiesParagraph"

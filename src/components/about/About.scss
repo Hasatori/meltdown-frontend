@@ -5,3 +5,11 @@
   margin-right: auto;
   display: block;
 }
+@font-face {
+  font-family: 'squealer';
+  src: url(./../../assets/fonts/squealer.ttf);
+}
+
+.band-name {
+  font-family: squealer;
+}

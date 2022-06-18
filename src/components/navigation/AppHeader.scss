@@ -1,11 +1,25 @@
 @import "../../index";
 
 
+
 .navbar{
   background-color: var(--color-secondary) !important;
 }
 .active {
   font-weight: bold;
+}
+
+.logo {
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+@font-face {
+  font-family: 'squealer';
+  src: url(./../../assets/fonts/squealer.ttf);
+}
+
+.band-name {
+  font-family: squealer;
 }
 
 $nav-icon-width:30px;

@@ -20,14 +20,14 @@ export function getLanguageFlagPairFromLocale(locale: string) {
         case 'cs':
             return [cs_flag, 'čeština'];
         default:
-            return [english_flag, 'english'];
+            return [english_flag, 'čeština'];
     }
 }
 
 i18n.use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        fallbackLng: ['en', 'cs'],
+        fallbackLng: ['cs'],
         debug: true,
         interpolation: {
             escapeValue: false,
