@@ -49,6 +49,7 @@ import Login from "./user/login/Login";
 import {Cookies} from "react-cookie";
 import {THEME_COOKIE_NAME} from "../redux/reducer/GeneralReducer";
 import {Routes} from "../util/Constants";
+import Home from "./home/Home";
 
 function mapStateToProps(state: AppState, props: AppProps) {
     return {
@@ -191,7 +192,8 @@ function App(appProps: AppProps) {
             <CookiesConsent/>
             <MDBContainer className="app-body">
                 <Switch>
-                    <Route exact path={[Routes.ABOUT1,Routes.ABOUT2]} render={(props )=> <About {...appProps}/>}/>
+                    <Route exact path={[Routes.HOME]} render={(props )=> <Home/>}/>
+                    <Route exact path={[Routes.ABOUT]} render={(props )=> <About {...appProps}/>}/>
                     <PrivateRoute
                         path={[Routes.ACCOUNT]}
                         {...{

@@ -49,7 +49,7 @@ function AppHeader(props: AppProps) {
         <header className="app-header z-depth-1">
             <MDBNavbar className="navbar" fixed="top" style={bgPink} expand="lg">
                 <MDBContainer>
-                    <MDBNavbarBrand href={Routes.ABOUT1}>
+                    <MDBNavbarBrand href={Routes.HOME}>
  <div className='band-name h1-responsive'>Meltdown</div>
                     </MDBNavbarBrand>
                     <div className="d-flex flex-row">
@@ -77,8 +77,8 @@ function AppHeader(props: AppProps) {
                     </div>
                     <MDBCollapse isOpen={open} navbar>
                         <MDBNavbarNav left>
-                            <MDBNavItem active={location.pathname === Routes.ABOUT1}>
-                                <MDBNavLink to={Routes.ABOUT1} link>
+                            <MDBNavItem active={location.pathname === Routes.ABOUT}>
+                                <MDBNavLink to={Routes.ABOUT} link>
                                     <div onClick={() => {
                                         setOpen(false)
                                     }}>{t('ns1:aboutAppLabel')}</div>

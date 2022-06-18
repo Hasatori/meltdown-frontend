@@ -22,8 +22,8 @@ export function O2AUTH_URL_RECOVERY(provider: OAuth2Provider, locale: string, re
 
 
 export enum Routes {
-    ABOUT1 = '/',
-    ABOUT2 = '/about',
+    HOME = '/',
+    ABOUT = '/about',
     LOGIN = '/login',
     SIGNUP = '/signup',
     ACCOUNT = '/account',

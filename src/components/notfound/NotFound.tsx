@@ -15,7 +15,7 @@ function NotFound() {
                         <MDBCardText className='text-center'>
                             {t('ns1:pageNotFoundMessage')}
                         </MDBCardText>
-                            <button className="btn btn-block btn-primary" onClick={()=>{history.push(Routes.ABOUT1)}} >{t('ns1:goBackButton')}</button>
+                            <button className="btn btn-block btn-primary" onClick={()=>{history.push(Routes.HOME)}} >{t('ns1:goBackButton')}</button>
                     </MDBCardBody>
                 </MDBCard>
     );
