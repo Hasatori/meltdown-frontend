@@ -27,7 +27,7 @@ function About(appProps: AppProps) {
             <section>
                 <h2 className="h2-responsive color-primary bold mb-4">Styl</h2>
                 <p className="text-long">
-                    Kapela se vyznačuje děláním špatných coverů dobrých písní. Zaměřuje se zejména na mršení písní od Tool (nebo jak jej kapela sama pracovně nazývá "Tůl", popřípadě "Stůl").
+                    Kapela se vyznačuje stylem "shit-covering", neboli děláním špatných coverů dobrých písní. Zaměřuje se zejména na mršení písní od Tool (nebo jak jej kapela sama pracovně nazývá "Tůl", popřípadě "Stůl").
                 </p>
             </section>
             <div className="divider"/>
